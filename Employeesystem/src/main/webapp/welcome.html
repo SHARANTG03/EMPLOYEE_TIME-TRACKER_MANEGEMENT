@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <style>
+        .login-options {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .login-options div {
+            margin: 0 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .login-options div:hover {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <div class="login-options">
+        <div onclick="location.href='login.jsp?role=employee'">
+            <h2>Employee</h2>
+        </div>
+        <div onclick="location.href='login.jsp?role=admin'">
+            <h2>Admin</h2>
+        </div>
+    </div>
+</body>
+</html>
